@@ -7,14 +7,9 @@ const jwt = require('jsonwebtoken');
 // Clave secreta para firmar tokens (cámbiala por algo seguro)
 const SECRET_KEY = 'VYN_PIANO_SECRET_KEY_2024_CAMBIA_ESTA';
 
-// Dominios autorizados (los que pueden usar tu piano)
+// Dominios autorizados (SOLO LOS QUE TÚ QUIERAS - SIN localhost)
 const DOMINIOS_AUTORIZADOS = [
-    'localhost:3000',
-    'localhost:5500',
-    '127.0.0.1:3000',
-    'vyn-piano-studio.netlify.app',
-    'vyn-piano.netlify.app',
-    'vyn-piano-backend.onrender.com'
+    'vyn-piano-studio.netlify.app'  // SOLO TU DOMINIO DE NETLIFY
 ];
 
 // Función para generar token
